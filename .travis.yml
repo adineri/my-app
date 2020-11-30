@@ -13,13 +13,6 @@ install: true
     - sudo chmod +x /usr/local/share/chromedriver
     - sudo ln -s /usr/local/share/chromedriver /usr/local/bin/chromedriver
 before_script:
-    - bundle install
-    - gem install watir
-    - gem install colorize
-    - gem install rspec
-    - gem install cucumber
-    - gem install rake
-    - gem install chromium
     - wget http://chromedriver.storage.googleapis.com/2.27/chromedriver_linux64.zip
     - unzip chromedriver_linux64.zip
     - sudo apt-get install libnss3
